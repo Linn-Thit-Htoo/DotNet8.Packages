@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35005.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GraphQL", "GraphQL", "{CDFB11FA-CD1B-4AF3-892D-50E9C3ABBAE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.GraphQL", "DotNet8.Packages.GraphQL\DotNet8.Packages.GraphQL.csproj", "{CB4112A7-5D5B-40FF-A3FF-057ACF61F654}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{3CF995EE-F306-43DF-B41B-239310C1A66D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Shared", "DotNet8.Packages.Shared\DotNet8.Packages.Shared.csproj", "{A8944AAB-68DD-4D3B-B0B7-EF11B9ABF251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.DbService", "DotNet8.Packages.DbService\DotNet8.Packages.DbService.csproj", "{ED3F7301-4B99-4CBE-AB98-44A931F0E4B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.DTOs", "DotNet8.Packages.DTOs\DotNet8.Packages.DTOs.csproj", "{0A8BC47A-A5AA-4F76-AA4A-BEC83421517C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Extensions", "DotNet8.Packages.Extensions\DotNet8.Packages.Extensions.csproj", "{CB61FF97-7A57-4F7C-B354-4FBE5723E018}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB4112A7-5D5B-40FF-A3FF-057ACF61F654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB4112A7-5D5B-40FF-A3FF-057ACF61F654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB4112A7-5D5B-40FF-A3FF-057ACF61F654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB4112A7-5D5B-40FF-A3FF-057ACF61F654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8944AAB-68DD-4D3B-B0B7-EF11B9ABF251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8944AAB-68DD-4D3B-B0B7-EF11B9ABF251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8944AAB-68DD-4D3B-B0B7-EF11B9ABF251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8944AAB-68DD-4D3B-B0B7-EF11B9ABF251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED3F7301-4B99-4CBE-AB98-44A931F0E4B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3F7301-4B99-4CBE-AB98-44A931F0E4B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3F7301-4B99-4CBE-AB98-44A931F0E4B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3F7301-4B99-4CBE-AB98-44A931F0E4B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8BC47A-A5AA-4F76-AA4A-BEC83421517C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8BC47A-A5AA-4F76-AA4A-BEC83421517C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8BC47A-A5AA-4F76-AA4A-BEC83421517C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8BC47A-A5AA-4F76-AA4A-BEC83421517C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB61FF97-7A57-4F7C-B354-4FBE5723E018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB61FF97-7A57-4F7C-B354-4FBE5723E018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB61FF97-7A57-4F7C-B354-4FBE5723E018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB61FF97-7A57-4F7C-B354-4FBE5723E018}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CB4112A7-5D5B-40FF-A3FF-057ACF61F654} = {CDFB11FA-CD1B-4AF3-892D-50E9C3ABBAE4}
+		{A8944AAB-68DD-4D3B-B0B7-EF11B9ABF251} = {3CF995EE-F306-43DF-B41B-239310C1A66D}
+		{ED3F7301-4B99-4CBE-AB98-44A931F0E4B1} = {3CF995EE-F306-43DF-B41B-239310C1A66D}
+		{0A8BC47A-A5AA-4F76-AA4A-BEC83421517C} = {3CF995EE-F306-43DF-B41B-239310C1A66D}
+		{CB61FF97-7A57-4F7C-B354-4FBE5723E018} = {3CF995EE-F306-43DF-B41B-239310C1A66D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2EFEF06-B0BD-48B6-8936-C3534C97DAC3}
+	EndGlobalSection
+EndGlobal

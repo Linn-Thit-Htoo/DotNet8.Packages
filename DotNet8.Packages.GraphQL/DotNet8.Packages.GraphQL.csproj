@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HotChocolate" Version="13.9.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet8.Packages.DbService\DotNet8.Packages.DbService.csproj" />
+    <ProjectReference Include="..\DotNet8.Packages.DTOs\DotNet8.Packages.DTOs.csproj" />
+    <ProjectReference Include="..\DotNet8.Packages.Extensions\DotNet8.Packages.Extensions.csproj" />
+    <ProjectReference Include="..\DotNet8.Packages.Shared\DotNet8.Packages.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
