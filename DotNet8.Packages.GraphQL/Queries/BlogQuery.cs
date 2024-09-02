@@ -2,7 +2,6 @@
 using DotNet8.Packages.DTOs;
 using DotNet8.Packages.Extensions;
 using DotNet8.Packages.Shared;
-using HotChocolate;
 using Microsoft.EntityFrameworkCore;
 
 namespace DotNet8.Packages.GraphQL.Queries

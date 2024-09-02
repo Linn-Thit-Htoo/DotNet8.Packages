@@ -1,0 +1,6 @@
+@DotNet8.Packages.FluentValidation_HostAddress = http://localhost:5233
+
+GET {{DotNet8.Packages.FluentValidation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
