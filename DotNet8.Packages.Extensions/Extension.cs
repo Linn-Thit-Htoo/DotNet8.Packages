@@ -1,5 +1,5 @@
 ﻿using DotNet8.Packages.DbService;
-using DotNet8.Packages.DTOs;
+using DotNet8.Packages.DTOs.Blog;
 
 namespace DotNet8.Packages.Extensions
 {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DotNet8.Packages.DTOs
+namespace DotNet8.Packages.DTOs.Blog
 {
     public class BlogDto
     {
