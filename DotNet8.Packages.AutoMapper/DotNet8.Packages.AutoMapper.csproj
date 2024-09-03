@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DotNet8.Packages.DbService\DotNet8.Packages.DbService.csproj" />
     <ProjectReference Include="..\DotNet8.Packages.DTOs\DotNet8.Packages.DTOs.csproj" />
   </ItemGroup>

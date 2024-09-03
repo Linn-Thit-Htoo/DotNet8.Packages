@@ -9,9 +9,7 @@ namespace DotNet8.Packages.AutoMapper.Mapper
     {
         public AutoMapperProfile()
         {
-            CreateMap<Tbl_Blog, BlogDto>()
-                .ForMember(dest => dest.BlogId,
-                opt => opt.MapFrom(src => src.BlogId))
+            CreateMap<BlogRequestDto, BlogDto>()
                 .ForMember(dest => dest.BlogTitle,
                 opt => opt.MapFrom(src => src.BlogTitle))
                 .ForMember(dest => dest.BlogAuthor,
