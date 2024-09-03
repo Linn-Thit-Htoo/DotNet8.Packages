@@ -29,6 +29,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dumpify", "Dumpify", "{E454
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Dumpify", "DotNet8.Packages.Dumpify\DotNet8.Packages.Dumpify.csproj", "{DA4F2810-1595-4CA1-A823-2B669269D05D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FluentEmail", "FluentEmail", "{D151445C-4BAA-4F08-8B09-14E29EF55C0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.FluentEmail", "DotNet8.Packages.FluentEmail\DotNet8.Packages.FluentEmail.csproj", "{8ECC91F3-E308-4895-8A9B-5AE56F645A12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,10 @@ Global
 		{DA4F2810-1595-4CA1-A823-2B669269D05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA4F2810-1595-4CA1-A823-2B669269D05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA4F2810-1595-4CA1-A823-2B669269D05D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ECC91F3-E308-4895-8A9B-5AE56F645A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECC91F3-E308-4895-8A9B-5AE56F645A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ECC91F3-E308-4895-8A9B-5AE56F645A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ECC91F3-E308-4895-8A9B-5AE56F645A12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +88,7 @@ Global
 		{5AACD23F-FA25-4ED9-A9BE-8A4329E32AF2} = {E4D3AAA4-E848-451D-BAD1-10AFC1879302}
 		{7D02EF5A-526D-4E07-8D02-AF3DC8D3FE2C} = {4F943A89-20C4-4783-B2F8-1F4F4303A1A4}
 		{DA4F2810-1595-4CA1-A823-2B669269D05D} = {E45446A5-B6AC-4A57-ABDF-EBB8944F7009}
+		{8ECC91F3-E308-4895-8A9B-5AE56F645A12} = {D151445C-4BAA-4F08-8B09-14E29EF55C0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2EFEF06-B0BD-48B6-8936-C3534C97DAC3}
