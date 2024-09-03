@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet8.Packages.Extensions
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FluentValidation", "FluentValidation", "{E4D3AAA4-E848-451D-BAD1-10AFC1879302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.FluentValidation", "DotNet8.Packages.FluentValidation\DotNet8.Packages.FluentValidation.csproj", "{5AACD23F-FA25-4ED9-A9BE-8A4329E32AF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet8.Packages.FluentValidation", "DotNet8.Packages.FluentValidation\DotNet8.Packages.FluentValidation.csproj", "{5AACD23F-FA25-4ED9-A9BE-8A4329E32AF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoMapper", "AutoMapper", "{4F943A89-20C4-4783-B2F8-1F4F4303A1A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.AutoMapper", "DotNet8.Packages.AutoMapper\DotNet8.Packages.AutoMapper.csproj", "{7D02EF5A-526D-4E07-8D02-AF3DC8D3FE2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,10 @@ Global
 		{5AACD23F-FA25-4ED9-A9BE-8A4329E32AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AACD23F-FA25-4ED9-A9BE-8A4329E32AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AACD23F-FA25-4ED9-A9BE-8A4329E32AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D02EF5A-526D-4E07-8D02-AF3DC8D3FE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D02EF5A-526D-4E07-8D02-AF3DC8D3FE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D02EF5A-526D-4E07-8D02-AF3DC8D3FE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D02EF5A-526D-4E07-8D02-AF3DC8D3FE2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 		{0A8BC47A-A5AA-4F76-AA4A-BEC83421517C} = {3CF995EE-F306-43DF-B41B-239310C1A66D}
 		{CB61FF97-7A57-4F7C-B354-4FBE5723E018} = {3CF995EE-F306-43DF-B41B-239310C1A66D}
 		{5AACD23F-FA25-4ED9-A9BE-8A4329E32AF2} = {E4D3AAA4-E848-451D-BAD1-10AFC1879302}
+		{7D02EF5A-526D-4E07-8D02-AF3DC8D3FE2C} = {4F943A89-20C4-4783-B2F8-1F4F4303A1A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2EFEF06-B0BD-48B6-8936-C3534C97DAC3}
