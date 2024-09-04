@@ -23,15 +23,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet8.Packages.FluentVali
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoMapper", "AutoMapper", "{4F943A89-20C4-4783-B2F8-1F4F4303A1A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.AutoMapper", "DotNet8.Packages.AutoMapper\DotNet8.Packages.AutoMapper.csproj", "{7D02EF5A-526D-4E07-8D02-AF3DC8D3FE2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet8.Packages.AutoMapper", "DotNet8.Packages.AutoMapper\DotNet8.Packages.AutoMapper.csproj", "{7D02EF5A-526D-4E07-8D02-AF3DC8D3FE2C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dumpify", "Dumpify", "{E45446A5-B6AC-4A57-ABDF-EBB8944F7009}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Dumpify", "DotNet8.Packages.Dumpify\DotNet8.Packages.Dumpify.csproj", "{DA4F2810-1595-4CA1-A823-2B669269D05D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet8.Packages.Dumpify", "DotNet8.Packages.Dumpify\DotNet8.Packages.Dumpify.csproj", "{DA4F2810-1595-4CA1-A823-2B669269D05D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FluentEmail", "FluentEmail", "{D151445C-4BAA-4F08-8B09-14E29EF55C0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.FluentEmail", "DotNet8.Packages.FluentEmail\DotNet8.Packages.FluentEmail.csproj", "{8ECC91F3-E308-4895-8A9B-5AE56F645A12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet8.Packages.FluentEmail", "DotNet8.Packages.FluentEmail\DotNet8.Packages.FluentEmail.csproj", "{8ECC91F3-E308-4895-8A9B-5AE56F645A12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewtonSoft", "NewtonSoft", "{C96CA9EB-30A8-4058-AA1E-EFFB5C4C7F32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.NewtonSoft", "DotNet8.Packages.NewtonSoft\DotNet8.Packages.NewtonSoft.csproj", "{2D1AD323-1E36-41AE-8659-24513F80F3CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,10 @@ Global
 		{8ECC91F3-E308-4895-8A9B-5AE56F645A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ECC91F3-E308-4895-8A9B-5AE56F645A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ECC91F3-E308-4895-8A9B-5AE56F645A12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1AD323-1E36-41AE-8659-24513F80F3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1AD323-1E36-41AE-8659-24513F80F3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1AD323-1E36-41AE-8659-24513F80F3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1AD323-1E36-41AE-8659-24513F80F3CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +97,7 @@ Global
 		{7D02EF5A-526D-4E07-8D02-AF3DC8D3FE2C} = {4F943A89-20C4-4783-B2F8-1F4F4303A1A4}
 		{DA4F2810-1595-4CA1-A823-2B669269D05D} = {E45446A5-B6AC-4A57-ABDF-EBB8944F7009}
 		{8ECC91F3-E308-4895-8A9B-5AE56F645A12} = {D151445C-4BAA-4F08-8B09-14E29EF55C0E}
+		{2D1AD323-1E36-41AE-8659-24513F80F3CB} = {C96CA9EB-30A8-4058-AA1E-EFFB5C4C7F32}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2EFEF06-B0BD-48B6-8936-C3534C97DAC3}
