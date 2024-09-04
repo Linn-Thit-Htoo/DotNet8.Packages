@@ -1,0 +1,6 @@
+@DotNet8.Packages.Sieve_HostAddress = http://localhost:5185
+
+GET {{DotNet8.Packages.Sieve_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

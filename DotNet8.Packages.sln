@@ -41,6 +41,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FluentFtp", "FluentFtp", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.FluentFtp", "DotNet8.Packages.FluentFtp\DotNet8.Packages.FluentFtp.csproj", "{B531FA48-B51D-4B6F-925D-0418A77478DA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sieve", "Sieve", "{092ED6D9-972D-4931-8760-0E0B2C0A07F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Sieve", "DotNet8.Packages.Sieve\DotNet8.Packages.Sieve.csproj", "{109C8983-454A-4C34-AD5C-57CE0882B531}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +95,10 @@ Global
 		{B531FA48-B51D-4B6F-925D-0418A77478DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B531FA48-B51D-4B6F-925D-0418A77478DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B531FA48-B51D-4B6F-925D-0418A77478DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{109C8983-454A-4C34-AD5C-57CE0882B531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{109C8983-454A-4C34-AD5C-57CE0882B531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{109C8983-454A-4C34-AD5C-57CE0882B531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109C8983-454A-4C34-AD5C-57CE0882B531}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +115,7 @@ Global
 		{8ECC91F3-E308-4895-8A9B-5AE56F645A12} = {D151445C-4BAA-4F08-8B09-14E29EF55C0E}
 		{2D1AD323-1E36-41AE-8659-24513F80F3CB} = {C96CA9EB-30A8-4058-AA1E-EFFB5C4C7F32}
 		{B531FA48-B51D-4B6F-925D-0418A77478DA} = {F83F6AF7-33D7-4C6A-89DB-E6744C9DF55A}
+		{109C8983-454A-4C34-AD5C-57CE0882B531} = {092ED6D9-972D-4931-8760-0E0B2C0A07F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2EFEF06-B0BD-48B6-8936-C3534C97DAC3}
