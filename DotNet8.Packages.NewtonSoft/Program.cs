@@ -26,24 +26,3 @@ public class Program
         #endregion
     }
 }
-
-public static class DevCode
-{
-    public static string ToJson(this object obj)
-    {
-        return JsonConvert.SerializeObject(obj);
-    }
-
-    public static T ToObject<T>(this string jsonStr)
-    {
-        return JsonConvert.DeserializeObject<T>(jsonStr)!;
-    }
-}
-
-public class BlogModel
-{
-    public int BlogId { get; set; }
-    public string BlogTitle { get; set; }
-    public string BlogAuthor { get; set; }
-    public string BlogContent { get; set; }
-}
