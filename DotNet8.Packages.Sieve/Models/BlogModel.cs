@@ -15,5 +15,13 @@ namespace DotNet8.Packages.Sieve.Models
 
         [Sieve(CanFilter = true)]
         public string BlogContent { get; set; }
+
+        public BlogModel(int blogId, string blogTitle, string blogAuthor, string blogContent)
+        {
+            BlogId = blogId;
+            BlogTitle = blogTitle;
+            BlogAuthor = blogAuthor;
+            BlogContent = blogContent;
+        }
     }
 }
