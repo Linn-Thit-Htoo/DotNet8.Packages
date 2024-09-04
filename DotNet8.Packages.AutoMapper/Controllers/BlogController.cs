@@ -1,7 +1,5 @@
 ﻿using AutoMapper;
-using DotNet8.Packages.DbService;
 using DotNet8.Packages.DTOs.Blog;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DotNet8.Packages.AutoMapper.Controllers
