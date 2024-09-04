@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace DotNet8.Packages.NewtonSoft;
+﻿namespace DotNet8.Packages.NewtonSoft;
 
 public class Program
 {
