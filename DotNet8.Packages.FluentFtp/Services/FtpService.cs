@@ -12,11 +12,11 @@ namespace DotNet8.Packages.FluentFtp.Services
 
         public FtpService(ILogger<FtpService> logger)
         {
-            _userName = "posapi";
-            _password = "NKsoftwarehouse*1";
+            _userName = "";
+            _password = "";
             _ftp = new AsyncFtpClient
             {
-                Host = "win8135.site4now.net",
+                Host = "",
                 Credentials = new NetworkCredential(_userName, _password)
             };
             _logger = logger;
