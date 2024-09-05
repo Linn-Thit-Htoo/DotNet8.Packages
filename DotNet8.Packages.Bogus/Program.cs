@@ -1,7 +1,4 @@
-﻿using Bogus;
-using Newtonsoft.Json;
-
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Hello, World!");
 
 int no = 0;
 Random random = new Random();
