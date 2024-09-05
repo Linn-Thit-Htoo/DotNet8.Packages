@@ -53,6 +53,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bogus", "Bogus", "{58942364
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Bogus", "DotNet8.Packages.Bogus\DotNet8.Packages.Bogus.csproj", "{929EC2AE-DEFF-418F-BD02-34629761CAE5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Polly", "Polly", "{EA4DCF02-37DA-45E6-9412-127E745571F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Polly", "DotNet8.Packages.Polly\DotNet8.Packages.Polly.csproj", "{8768B050-3FB4-4A9A-B3D0-F5F2D86B34D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +119,10 @@ Global
 		{929EC2AE-DEFF-418F-BD02-34629761CAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929EC2AE-DEFF-418F-BD02-34629761CAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{929EC2AE-DEFF-418F-BD02-34629761CAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8768B050-3FB4-4A9A-B3D0-F5F2D86B34D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8768B050-3FB4-4A9A-B3D0-F5F2D86B34D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8768B050-3FB4-4A9A-B3D0-F5F2D86B34D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8768B050-3FB4-4A9A-B3D0-F5F2D86B34D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,6 +142,7 @@ Global
 		{109C8983-454A-4C34-AD5C-57CE0882B531} = {092ED6D9-972D-4931-8760-0E0B2C0A07F1}
 		{B8259338-09CD-4C55-9160-4D4C05C60E24} = {CD7194AD-045E-4BE4-96FE-CAD9583184A9}
 		{929EC2AE-DEFF-418F-BD02-34629761CAE5} = {58942364-F758-4028-86E5-5BFFA029799B}
+		{8768B050-3FB4-4A9A-B3D0-F5F2D86B34D4} = {EA4DCF02-37DA-45E6-9412-127E745571F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2EFEF06-B0BD-48B6-8936-C3534C97DAC3}
