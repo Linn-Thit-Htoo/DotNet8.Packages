@@ -44,5 +44,37 @@ namespace DotNet8.Packages.OData.Controllers
 
             return Created(blog);
         }
+
+        public async Task<IActionResult> Patch([FromODataUri] int key, [FromBody] Tbl_Blog blog)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var item = await _context.Tbl_Blogs.FindAsync(key);
+            if (item is null)
+            {
+                return NotFound("No Data Found.");
+            }
+
+            if (!string.IsNullOrEmpty(blog.BlogTitle))
+            {
+                item.BlogTitle = blog.BlogTitle;
+            }
+
+            if (!string.IsNullOrEmpty(blog.BlogAuthor))
+            {
+                item.BlogAuthor = blog.BlogAuthor;
+            }
+
+            if (!string.IsNullOrEmpty(blog.BlogContent))
+            {
+                item.BlogContent = blog.BlogContent;
+            }
+            int result = await _context.SaveChangesAsync();
+
+            return result > 0 ? Accepted() : BadRequest();
+        }
     }
 }
