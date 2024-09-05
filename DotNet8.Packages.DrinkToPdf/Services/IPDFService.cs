@@ -1,10 +1,7 @@
-﻿using DotNet8.Packages.DrinkToPdf.Models;
+﻿namespace DotNet8.Packages.DrinkToPdf.Services;
 
-namespace DotNet8.Packages.DrinkToPdf.Services
+public interface IPDFService
 {
-    public interface IPDFService
-    {
-        public Task<string> GetHtml(UserModel user);
-        public Task<byte[]> GeneratePdf(string htmlContent);
-    }
+    public Task<string> GetHtml(UserModel user);
+    public Task<byte[]> GeneratePdf(string htmlContent);
 }
