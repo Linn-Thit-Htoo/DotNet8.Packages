@@ -1,7 +1,4 @@
-﻿using System.Net;
-using FluentFTP;
-
-namespace DotNet8.Packages.FluentFtp.Services;
+﻿namespace DotNet8.Packages.FluentFtp.Services;
 
 public class FtpService
 {
