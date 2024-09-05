@@ -77,6 +77,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hangfire", "Hangfire", "{12
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Hangfire", "DotNet8.Packages.Hangfire\DotNet8.Packages.Hangfire.csproj", "{D376D974-579D-4E63-9E77-1C9C685D7C45}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Redis", "Redis", "{D6E240B6-FF36-4188-B302-5805AB791400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Redis", "DotNet8.Packages.Redis\DotNet8.Packages.Redis.csproj", "{52DBFA3F-9DA5-4BFC-A07D-0E63791AE4C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +167,10 @@ Global
 		{D376D974-579D-4E63-9E77-1C9C685D7C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D376D974-579D-4E63-9E77-1C9C685D7C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D376D974-579D-4E63-9E77-1C9C685D7C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52DBFA3F-9DA5-4BFC-A07D-0E63791AE4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DBFA3F-9DA5-4BFC-A07D-0E63791AE4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DBFA3F-9DA5-4BFC-A07D-0E63791AE4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DBFA3F-9DA5-4BFC-A07D-0E63791AE4C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -188,6 +196,7 @@ Global
 		{5C352D35-0FA5-4D13-BFC3-A9639074A684} = {AE863818-D6D4-4D68-AF5F-F4F0AE30B82B}
 		{652BCDC4-C55E-4DA9-A303-D9577E81639F} = {A13CCC06-ED8B-4662-AD32-DE592CF231A4}
 		{D376D974-579D-4E63-9E77-1C9C685D7C45} = {127698BB-B65B-4265-BCB2-5D2480954A34}
+		{52DBFA3F-9DA5-4BFC-A07D-0E63791AE4C9} = {D6E240B6-FF36-4188-B302-5805AB791400}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2EFEF06-B0BD-48B6-8936-C3534C97DAC3}
