@@ -1,8 +1,4 @@
-﻿using DotNet8.Packages.DrinkToPdf.Models;
-using DotNet8.Packages.DrinkToPdf.Services;
-using Microsoft.AspNetCore.Mvc;
-
-namespace DotNet8.Packages.DrinkToPdf.Controllers;
+﻿namespace DotNet8.Packages.DrinkToPdf.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
