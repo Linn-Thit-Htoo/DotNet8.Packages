@@ -35,19 +35,19 @@ public class PDFService : IPDFService
             HtmlContent = htmlContent,
             WebSettings = { DefaultEncoding = "utf-8" },
             HeaderSettings =
-        {
-            FontSize = 8,
-            Right = "Page [page] of [toPage]",
-            Line = true,
-            Spacing = 2.812
-        },
+            {
+                FontSize = 8,
+                Right = "Page [page] of [toPage]",
+                Line = true,
+                Spacing = 2.812
+            },
             FooterSettings =
-        {
-            FontSize = 8,
-            Right = "Page [page] of [toPage]",
-            Line = true,
-            Spacing = 2.812
-        },
+            {
+                FontSize = 8,
+                Right = "Page [page] of [toPage]",
+                Line = true,
+                Spacing = 2.812
+            },
         };
 
         var document = new HtmlToPdfDocument()
