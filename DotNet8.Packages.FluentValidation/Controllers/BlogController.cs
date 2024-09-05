@@ -1,32 +1,30 @@
 ﻿using DotNet8.Packages.DTOs.Blog;
 using DotNet8.Packages.FluentValidation.Validators;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotNet8.Packages.FluentValidation.Controllers
+namespace DotNet8.Packages.FluentValidation.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class BlogController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class BlogController : ControllerBase
+    private readonly BlogValidator _blogValidator;
+
+    public BlogController(BlogValidator blogValidator)
     {
-        private readonly BlogValidator _blogValidator;
+        _blogValidator = blogValidator;
+    }
 
-        public BlogController(BlogValidator blogValidator)
+    [HttpPost]
+    public async Task<IActionResult> CreateBlog([FromBody] BlogRequestDto blogRequest)
+    {
+        var validationResult = await _blogValidator.ValidateAsync(blogRequest);
+        if (!validationResult.IsValid)
         {
-            _blogValidator = blogValidator;
+            string errors = string.Join(" ", validationResult.Errors.Select(x => x.ErrorMessage));
+            return BadRequest(errors);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateBlog([FromBody] BlogRequestDto blogRequest)
-        {
-            var validationResult = await _blogValidator.ValidateAsync(blogRequest);
-            if (!validationResult.IsValid)
-            {
-                string errors = string.Join(" ", validationResult.Errors.Select(x => x.ErrorMessage));
-                return BadRequest(errors);
-            }
-
-            return Ok();
-        }
+        return Ok();
     }
 }
