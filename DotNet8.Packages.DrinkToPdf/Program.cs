@@ -1,5 +1,3 @@
-using DotNet8.Packages.DrinkToPdf.Extensions;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
