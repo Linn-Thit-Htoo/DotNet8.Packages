@@ -1,0 +1,6 @@
+@DotNet8.Packages.Serilog_HostAddress = http://localhost:5291
+
+GET {{DotNet8.Packages.Serilog_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
