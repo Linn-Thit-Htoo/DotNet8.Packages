@@ -38,3 +38,18 @@
 
 ## NLog
   - [https://medium.com/@jaydeepvpatil225/logging-in-net-core-with-nlog-de1bcabcd187](https://medium.com/@jaydeepvpatil225/logging-in-net-core-with-nlog-de1bcabcd187)
+
+## OData
+  - [https://github.com/OData/AspNetCoreOData](https://github.com/OData/AspNetCoreOData)
+
+## Polly
+  - [https://medium.com/@sdbala/resilient-http-calls-using-polly-307855cb98b3](https://medium.com/@sdbala/resilient-http-calls-using-polly-307855cb98b3)
+
+## Redis
+  - [https://blog.stackademic.com/caching-in-net-core-using-redis-a5308c7064b3](https://blog.stackademic.com/caching-in-net-core-using-redis-a5308c7064b3)
+
+## Serilog
+  - [https://github.com/serilog/serilog-aspnetcore](https://github.com/serilog/serilog-aspnetcore)
+
+## Sieve
+  - [https://github.com/Biarity/Sieve](https://github.com/Biarity/Sieve)
