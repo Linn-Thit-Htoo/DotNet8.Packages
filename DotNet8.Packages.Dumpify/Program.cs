@@ -1,4 +1,4 @@
-﻿using Dumpify;
+﻿namespace DotNet8.Packages.Dumpify;
 
 public class Program
 {
