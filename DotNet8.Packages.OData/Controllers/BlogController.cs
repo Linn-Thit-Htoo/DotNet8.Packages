@@ -1,5 +1,6 @@
 ﻿using DotNet8.Packages.OData.AppDbContextModels;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Formatter;
 using Microsoft.AspNetCore.OData.Query;
@@ -73,6 +74,25 @@ namespace DotNet8.Packages.OData.Controllers
                 item.BlogContent = blog.BlogContent;
             }
             int result = await _context.SaveChangesAsync();
+
+            return result > 0 ? Accepted() : BadRequest();
+        }
+
+        public async Task<IActionResult> Delete([FromODataUri] int key)
+        {
+            if (key <= 0)
+            {
+                return BadRequest();
+            }
+
+            var item = await _context.Tbl_Blogs.FindAsync(key);
+            if (item is null)
+            {
+                return NotFound("No Data Found.");
+            }
+
+            _context.Tbl_Blogs.Remove(item);
+            await _context.SaveChangesAsync();
 
             return result > 0 ? Accepted() : BadRequest();
         }
