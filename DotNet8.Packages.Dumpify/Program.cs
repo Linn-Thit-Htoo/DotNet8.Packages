@@ -6,7 +6,6 @@ public class Program
     {
         new { BlogId = 1, BlogTitle = "Dumpify" }.Dump();
 
-
         var blog = new BlogModel()
         {
             BlogId = 2,
@@ -16,6 +15,7 @@ public class Program
         }.Dump();
     }
 }
+
 public class BlogModel
 {
     public int BlogId { get; set; }
