@@ -1,5 +1,3 @@
-using DotNet8.Packages.AutoMapper.Mapper;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
