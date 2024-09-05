@@ -1,43 +1,41 @@
 ﻿using DotNet8.Packages.DrinkToPdf.Models;
 using DotNet8.Packages.DrinkToPdf.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotNet8.Packages.DrinkToPdf.Controllers
+namespace DotNet8.Packages.DrinkToPdf.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class UserController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UserController : ControllerBase
+    private readonly IPDFService _pdfService;
+
+    public UserController(IPDFService pdfService)
     {
-        private readonly IPDFService _pdfService;
+        _pdfService = pdfService;
+    }
 
-        public UserController(IPDFService pdfService)
+    [HttpPost("Generate-Pdf")]
+    public async Task<IActionResult> GeneratePdf()
+    {
+        try
         {
-            _pdfService = pdfService;
+            var user = new UserModel
+            {
+                UserId = 1,
+                UserName = "Linn Thit",
+                UserRole = "Admin",
+                IsActive = true
+            };
+
+            var html = await _pdfService.GetHtml(user);
+            var pdf = await _pdfService.GeneratePdf(html);
+
+            return File(pdf, "application/pdf", $"{user.UserName}.pdf");
         }
-
-        [HttpPost("Generate-Pdf")]
-        public async Task<IActionResult> GeneratePdf()
+        catch (Exception ex)
         {
-            try
-            {
-                var user = new UserModel
-                {
-                    UserId = 1,
-                    UserName = "Linn Thit",
-                    UserRole = "Admin",
-                    IsActive = true
-                };
-
-                var html = await _pdfService.GetHtml(user);
-                var pdf = await _pdfService.GeneratePdf(html);
-
-                return File(pdf, "application/pdf", $"{user.UserName}.pdf");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
+            return StatusCode(500, ex.Message);
         }
     }
 }
