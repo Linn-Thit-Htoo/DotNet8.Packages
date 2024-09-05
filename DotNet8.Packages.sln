@@ -69,6 +69,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "log4net", "log4net", "{AE86
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Log4net", "DotNet8.Packages.Log4net\DotNet8.Packages.Log4net.csproj", "{5C352D35-0FA5-4D13-BFC3-A9639074A684}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gridify", "Gridify", "{A13CCC06-ED8B-4662-AD32-DE592CF231A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8.Packages.Gridify", "DotNet8.Packages.Gridify\DotNet8.Packages.Gridify.csproj", "{652BCDC4-C55E-4DA9-A303-D9577E81639F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,10 @@ Global
 		{5C352D35-0FA5-4D13-BFC3-A9639074A684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C352D35-0FA5-4D13-BFC3-A9639074A684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C352D35-0FA5-4D13-BFC3-A9639074A684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652BCDC4-C55E-4DA9-A303-D9577E81639F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652BCDC4-C55E-4DA9-A303-D9577E81639F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652BCDC4-C55E-4DA9-A303-D9577E81639F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652BCDC4-C55E-4DA9-A303-D9577E81639F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -170,6 +178,7 @@ Global
 		{871CDAEB-A066-47CA-8FD1-071A463DC4F7} = {2B60ED1E-0EF6-434B-B314-2C85DDBB28CF}
 		{637C7208-3F2F-4E0D-A2EF-64882AEF125F} = {8300ED4F-EC7E-4542-9DDF-FC42A07D263B}
 		{5C352D35-0FA5-4D13-BFC3-A9639074A684} = {AE863818-D6D4-4D68-AF5F-F4F0AE30B82B}
+		{652BCDC4-C55E-4DA9-A303-D9577E81639F} = {A13CCC06-ED8B-4662-AD32-DE592CF231A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2EFEF06-B0BD-48B6-8936-C3534C97DAC3}
