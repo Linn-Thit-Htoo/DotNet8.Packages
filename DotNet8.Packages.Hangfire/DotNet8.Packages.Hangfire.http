@@ -1,0 +1,6 @@
+@DotNet8.Packages.Hangfire_HostAddress = http://localhost:5023
+
+GET {{DotNet8.Packages.Hangfire_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
