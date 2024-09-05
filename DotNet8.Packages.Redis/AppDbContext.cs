@@ -20,6 +20,7 @@ namespace DotNet8.Packages.Redis
                 Password = "sasa@123",
                 TrustServerCertificate = true
             };
+            optionsBuilder.UseSqlServer(sqlConnectionStringBuilder.ConnectionString);
         }
 
         public DbSet<BlogModel> Blogs { get; set; }
