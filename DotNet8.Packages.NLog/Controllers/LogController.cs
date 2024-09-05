@@ -1,17 +1,17 @@
-﻿using DotNet8.Packages.Serilog.Models;
+﻿using DotNet8.Packages.NLog.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace DotNet8.Packages.Serilog.Controllers
+namespace DotNet8.Packages.NLog.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class LogController : ControllerBase
     {
-        private readonly ILogger<LogController> _logger;
+        private readonly ILoggerManager _logger;
 
-        public LogController(ILogger<LogController> logger)
+        public LogController(ILoggerManager logger)
         {
             _logger = logger;
         }
@@ -20,7 +20,7 @@ namespace DotNet8.Packages.Serilog.Controllers
         public IActionResult Test([FromBody] BlogRequestDto blogRequest)
         {
             string jsonStr = JsonConvert.SerializeObject(blogRequest);
-            _logger.LogInformation(jsonStr);
+            _logger.LogInfo(jsonStr);
 
             return Ok();
         }
