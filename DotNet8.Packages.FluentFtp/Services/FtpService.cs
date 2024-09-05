@@ -9,11 +9,11 @@ public class FtpService
 
     public FtpService(ILogger<FtpService> logger)
     {
-        _userName = "";
-        _password = "";
+        _userName = string.Empty;
+        _password = string.Empty;
         _ftp = new AsyncFtpClient
         {
-            Host = "",
+            Host = string.Empty,
             Credentials = new NetworkCredential(_userName, _password)
         };
         _logger = logger;
