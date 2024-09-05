@@ -1,8 +1,7 @@
 ﻿namespace DotNet8.Packages.Hangfire.DTOs
 {
-    public class BlogDto
+    public class BlogRequestDto
     {
-        public int BlogId { get; set; }
         public string BlogTitle { get; set; }
         public string BlogAuthor { get; set; }
         public string BlogContent { get; set; }
