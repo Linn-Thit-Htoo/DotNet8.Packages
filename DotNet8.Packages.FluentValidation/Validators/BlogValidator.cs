@@ -1,6 +1,4 @@
-﻿using FluentValidation;
-
-namespace DotNet8.Packages.FluentValidation.Validators;
+﻿namespace DotNet8.Packages.FluentValidation.Validators;
 
 public class BlogValidator : AbstractValidator<BlogRequestDto>
 {
