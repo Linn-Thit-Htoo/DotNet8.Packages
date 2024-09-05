@@ -1,5 +1,4 @@
-﻿using FluentEmail.Core;
-using Microsoft.Extensions.DependencyInjection;
+﻿namespace DotNet8.Packages.FluentEmail;
 
 public class Program
 {
@@ -7,14 +6,16 @@ public class Program
     {
         var serviceCollection = new ServiceCollection();
 
-        var fromEmail = "lth1212001@gmail.com";
-        var toEmail = "soniapoudel03@gmail.com";
+        var fromEmail = "";
+        var toEmail = "";
         var subject = "Fluent Email Sample";
 
         Console.WriteLine("Body: ");
         string body = Console.ReadLine()!;
 
-        serviceCollection.AddFluentEmail(fromEmail).AddSmtpSender("smtp.gmail.com", 587, fromEmail, "wqxk dptz rfgm hjjf");
+        serviceCollection
+            .AddFluentEmail(fromEmail)
+            .AddSmtpSender("smtp.gmail.com", 587, fromEmail, "wqxk dptz rfgm hjjf");
         var services = serviceCollection.BuildServiceProvider();
 
         var fluentEmail = services.GetRequiredService<IFluentEmail>();
