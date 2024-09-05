@@ -1,69 +1,68 @@
 ﻿using DinkToPdf;
 using DinkToPdf.Contracts;
-using DotNet8.Packages.DrinkToPdf.Models;
 
-namespace DotNet8.Packages.DrinkToPdf.Services
+namespace DotNet8.Packages.DrinkToPdf.Services;
+
+public class PDFService : IPDFService
 {
-    public class PDFService : IPDFService
+    private readonly IConverter _converter;
+
+    public PDFService(IConverter converter)
     {
-        private readonly IConverter _converter;
+        _converter = converter;
+    }
 
-        public PDFService(IConverter converter)
+    public Task<byte[]> GeneratePdf(string htmlContent)
+    {
+        var globalSettings = new GlobalSettings
         {
-            _converter = converter;
-        }
-
-        public Task<byte[]> GeneratePdf(string htmlContent)
-        {
-            var globalSettings = new GlobalSettings
+            ColorMode = ColorMode.Color,
+            Orientation = Orientation.Portrait,
+            PaperSize = PaperKind.A4,
+            Margins = new MarginSettings
             {
-                ColorMode = ColorMode.Color,
-                Orientation = Orientation.Portrait,
-                PaperSize = PaperKind.A4,
-                Margins = new MarginSettings
-                {
-                    Top = 20,
-                    Bottom = 10,
-                    Left = 30,
-                    Right = 30
-                },
-                DocumentTitle = "User",
-            };
-
-            var objectSettings = new ObjectSettings
-            {
-                PagesCount = true,
-                HtmlContent = htmlContent,
-                WebSettings = { DefaultEncoding = "utf-8" },
-                HeaderSettings =
-            {
-                FontSize = 8,
-                Right = "Page [page] of [toPage]",
-                Line = true,
-                Spacing = 2.812
+                Top = 20,
+                Bottom = 10,
+                Left = 30,
+                Right = 30
             },
-                FooterSettings =
-            {
-                FontSize = 8,
-                Right = "Page [page] of [toPage]",
-                Line = true,
-                Spacing = 2.812
-            },
-            };
+            DocumentTitle = "User",
+        };
 
-            var document = new HtmlToPdfDocument()
-            {
-                GlobalSettings = globalSettings,
-                Objects = { objectSettings }
-            };
-
-            return Task.FromResult(_converter.Convert(document));
-        }
-
-        public Task<string> GetHtml(UserModel user)
+        var objectSettings = new ObjectSettings
         {
-            string htmlStr =
-                $@"
+            PagesCount = true,
+            HtmlContent = htmlContent,
+            WebSettings = { DefaultEncoding = "utf-8" },
+            HeaderSettings =
+        {
+            FontSize = 8,
+            Right = "Page [page] of [toPage]",
+            Line = true,
+            Spacing = 2.812
+        },
+            FooterSettings =
+        {
+            FontSize = 8,
+            Right = "Page [page] of [toPage]",
+            Line = true,
+            Spacing = 2.812
+        },
+        };
+
+        var document = new HtmlToPdfDocument()
+        {
+            GlobalSettings = globalSettings,
+            Objects = { objectSettings }
+        };
+
+        return Task.FromResult(_converter.Convert(document));
+    }
+
+    public Task<string> GetHtml(UserModel user)
+    {
+        string htmlStr =
+            $@"
         <!doctype html>
         <html lang=""en"">
             <head>
@@ -127,7 +126,6 @@ namespace DotNet8.Packages.DrinkToPdf.Services
         </html>
     ";
 
-            return Task.FromResult(htmlStr);
-        }
+        return Task.FromResult(htmlStr);
     }
 }
