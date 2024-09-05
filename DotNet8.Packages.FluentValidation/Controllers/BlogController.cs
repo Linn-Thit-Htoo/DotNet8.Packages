@@ -1,8 +1,4 @@
-﻿using DotNet8.Packages.DTOs.Blog;
-using DotNet8.Packages.FluentValidation.Validators;
-using Microsoft.AspNetCore.Mvc;
-
-namespace DotNet8.Packages.FluentValidation.Controllers;
+﻿namespace DotNet8.Packages.FluentValidation.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
