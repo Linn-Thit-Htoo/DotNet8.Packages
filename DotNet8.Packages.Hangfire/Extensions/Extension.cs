@@ -14,5 +14,15 @@ namespace DotNet8.Packages.Hangfire.Extensions
                 BlogContent = blogRequest.BlogContent
             };
         }
+
+        public static BlogDto ToDto(this Tbl_Blog datModel)
+        {
+            return new BlogDto
+            {
+                BlogTitle = datModel.BlogTitle,
+                BlogAuthor = datModel.BlogAuthor,
+                BlogContent = datModel.BlogContent
+            };
+        }
     }
 }
