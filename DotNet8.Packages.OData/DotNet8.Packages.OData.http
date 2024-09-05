@@ -1,0 +1,6 @@
+@DotNet8.Packages.OData_HostAddress = http://localhost:5064
+
+GET {{DotNet8.Packages.OData_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
