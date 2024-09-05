@@ -9,8 +9,6 @@ using Microsoft.AspNetCore.OData.Routing.Controllers;
 
 namespace DotNet8.Packages.OData.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class BlogController : ODataController
     {
         private readonly AppDbContext _context;
@@ -27,7 +25,7 @@ namespace DotNet8.Packages.OData.Controllers
         }
 
         [EnableQuery]
-        public SingleResult<Tbl_Blog> Get([FromODataUri] int key)
+        public SingleResult<Tbl_Blog> Get([FromODataUri] int key) // https://localhost:7252/odata/Blog(111)
         {
             var query = _context.Tbl_Blogs.Where(x => x.BlogId == key);
             return SingleResult.Create(query);
@@ -92,7 +90,7 @@ namespace DotNet8.Packages.OData.Controllers
             }
 
             _context.Tbl_Blogs.Remove(item);
-            await _context.SaveChangesAsync();
+            int result =await _context.SaveChangesAsync();
 
             return result > 0 ? Accepted() : BadRequest();
         }

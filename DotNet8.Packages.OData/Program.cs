@@ -59,7 +59,6 @@ app.Run();
 static IEdmModel GetEdmModel()
 {
     var odataBuilder = new ODataConventionModelBuilder();
-    odataBuilder.EntitySet<Tbl_Blog>("Blogs");
-
+    odataBuilder.EntitySet<Tbl_Blog>("Blog");
     return odataBuilder.GetEdmModel();
 }
