@@ -25,7 +25,7 @@ namespace DotNet8.Packages.Gridify.Controllers
                 Page = pageNo,
                 PageSize = pageSize
             };
-            var blogs = await _context.Tbl_Blogs.GridifyAsync(query);
+            var blogs = await _context.Tbl_Blogs.OrderByDescending(x => x.BlogId).GridifyAsync(query);
 
             return Ok(blogs);
         }
