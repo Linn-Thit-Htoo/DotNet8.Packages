@@ -1,4 +1,8 @@
 using DotNet8.Packages.Hangfire.AppDbContextModels;
+using DotNet8.Packages.Hangfire.Dependencies;
+using DotNet8.Packages.Hangfire.DTOs;
+using DotNet8.Packages.Hangfire.Repositories;
+using Hangfire;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,11 +14,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<AppDbContext>(opt =>
-{
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection"));
-    opt.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
-}, ServiceLifetime.Transient, ServiceLifetime.Transient);
+
+builder.Services.AddDependencyInjection(builder);
 
 var app = builder.Build();
 
@@ -26,6 +27,15 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseHangfireDashboard();
+
+BackgroundJob.Schedule<IBlogRepository>(x => x.AddBlogAsync(new BlogRequestDto
+{
+    BlogTitle = "Hangfire Title",
+    BlogAuthor = "Hangfire Author",
+    BlogContent = "Hangfire Content"
+}, new CancellationToken()), TimeSpan.FromMinutes(1));
 
 app.UseAuthorization();
 
