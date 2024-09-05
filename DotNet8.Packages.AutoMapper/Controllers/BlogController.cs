@@ -1,8 +1,4 @@
-﻿using AutoMapper;
-using DotNet8.Packages.DTOs.Blog;
-using Microsoft.AspNetCore.Mvc;
-
-namespace DotNet8.Packages.AutoMapper.Controllers;
+﻿namespace DotNet8.Packages.AutoMapper.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
